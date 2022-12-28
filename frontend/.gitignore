@@ -9,7 +9,7 @@
 /coverage
 
 # production
-# /build     buildi özellikle kapadım çünkü build klasörüne github da erişmem gerekiyor
+/build
 
 # misc
 .DS_Store
