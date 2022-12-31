@@ -19,9 +19,7 @@ function App() {
       </div>
 
 
-      <div style={{ justifyContent: "center", width: '100%', display: 'flex'}}>
-        <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", width: '100%', padding: '30px', margin: "10px" }}>
-          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", padding: '30px', margin: "10px", justifyContent: 'space-around', display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
                 Day 1
@@ -33,61 +31,56 @@ function App() {
             </div>
             <div></div>
             <div></div>
-            <div style={{ display: 'flex', flexDirection: 'column', marginRight: "30px", alignItems: 'center' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
               <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
                 Speakers
               </Typography>
 
-              <SpeakerBox 
-              speaker="Speaker 1" 
-              image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-              description="description"
-              time="11/12/2021 10:00 AM - 12:00 PM"
+              <SpeakerBox
+                speaker="Speaker 1"
+                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                description="description"
+                time="10:00 AM - 12:00 PM"
               />
-              <SpeakerBox 
-              speaker="Speaker 2" 
-              image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-              description="description"
-              time="11/12/2021 10:00 AM - 12:00 PM"
+              <SpeakerBox
+                speaker="Speaker 2"
+                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                description="description"
+                time="10:00 AM - 12:00 PM"
               />
-              <SpeakerBox 
-              speaker="Speaker 3" 
-              image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-              description="description"
-              time="11/12/2021 10:00 AM - 12:00 PM"
+              <SpeakerBox
+                speaker="Speaker 3"
+                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                description="description"
+                time="10:00 AM - 12:00 PM"
               />
             </div>
-
-          </div>
         </Box>
-      </div>
 
 
-      <div style={{ justifyContent: "center", width: '100%', display: 'flex'}}>
-        <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", width: '100%', padding: '30px', margin: "10px" }}>
-          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', marginRight: "30px", alignItems: 'center' }}>
+        <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", padding: '30px', margin: "10px", justifyContent: 'space-around', display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+          <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
               <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
                 Speakers
               </Typography>
 
-              <SpeakerBox 
-              speaker="Speaker 3" 
-              image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-              description="description"
-              time="11/12/2021 10:00 AM - 12:00 PM"
+              <SpeakerBox
+                speaker="Speaker 3"
+                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                description="description"
+                time="10:00 AM - 12:00 PM"
               />
-              <SpeakerBox 
-              speaker="Speaker 3" 
-              image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-              description="description"
-              time="11/12/2021 10:00 AM - 12:00 PM"
+              <SpeakerBox
+                speaker="Speaker 3"
+                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                description="description"
+                time="10:00 AM - 12:00 PM"
               />
-              <SpeakerBox 
-              speaker="Speaker 3" 
-              image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-              description="description"
-              time="11/12/2021 10:00 AM - 12:00 PM"
+              <SpeakerBox
+                speaker="Speaker 3"
+                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                description="description"
+                time="10:00 AM - 12:00 PM"
               />
             </div>
             <div></div>
@@ -101,11 +94,7 @@ function App() {
                 <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>11/12/2021 10:00 AM - 12:00 PM</Typography>
               </h4>
             </div>
-
-          </div>
         </Box>
-      </div>
-
 
     </div>
   );

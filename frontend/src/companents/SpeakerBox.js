@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material'
 
 export default function SpeakerBox({speaker, image, description, time}) {
     return (
-        <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", width: '100%', padding: '30px', margin: "10px" }}>
+        <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", width: '100%', padding: '10px', marginY: "10px", marginLeft: '' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Typography style={{ fontSize: '30px', fontWeight: 'bold' }}>
                     {speaker}
