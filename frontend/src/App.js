@@ -7,7 +7,7 @@ import SpeakerBox from "./companents/SpeakerBox";
 
 function App() {
   return (
-    <div>
+    <>
       <Appbar />
       <div style={{ padding: "35px" }} />
       <div style={{ display: "flex", justifyContent: "center", paddingTop: '20px' }}>
@@ -96,7 +96,39 @@ function App() {
             </div>
         </Box>
 
-    </div>
+        {/* partner and sponsorship section */}
+        <Box sx={{borderTop: '3px solid  white', color: 'white', backgroundColor: '#000034', width:'100%'
+      , marginTop:'30px', paddingY:'30px'
+      }}>
+          <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Partners
+              </Typography>
+              <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Sponsors
+              </Typography>
+              <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+              </div>
+            </div>
+        </Box>
+
+    </>
   );
 }
 
