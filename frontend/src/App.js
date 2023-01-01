@@ -1,5 +1,5 @@
-import { CalendarToday } from "@mui/icons-material";
-import { Box, Typography } from "@mui/material";
+import { CalendarToday, ExpandMore } from "@mui/icons-material";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, TextField, Typography } from "@mui/material";
 import React from "react";
 import Appbar from "./companents/Appbar";
 import SpeakerBox from "./companents/SpeakerBox";
@@ -96,8 +96,45 @@ function App() {
             </div>
         </Box>
 
+        {/* apply form section */} 
+        <Box sx={{borderTop: '3px solid  white', backgroundColor: '', width:'100%', marginTop:'40px', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'
+      }}>
+            <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '30px',margin:'30px', borderRadius: '20px', width: '' }}>
+              <AccordionSummary
+                expandIcon={<ExpandMore />}
+                aria-controls="panel1a-content"
+                id="panel1a-header" 
+                sx={{ alignItems: 'center' }}
+              >
+                <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                  Apply
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+                  {/* <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                    Apply
+                  </Typography> */}
+                  <form style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+                    <TextField id="outlined-basic" label="Name" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="Email" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="Phone Number" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="Company" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="Job Title" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="LinkedIn" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="Why do you want to attend?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <TextField id="outlined-basic" label="What do you hope to learn?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                    <Button variant="contained" style={{ backgroundColor: '#5700ff', color: 'white', fontSize: '20px', fontWeight: 'bold', width: 'fit-content', padding: '20px',marginTop:'15px', borderRadius: '20px' }}>
+                      Submit
+                    </Button>
+                  </form>
+                </div>
+              </AccordionDetails>
+            </Accordion>
+        </Box>
+
         {/* partner and sponsorship section */}
-        <Box sx={{borderTop: '3px solid  white', color: 'white', backgroundColor: '#000034', width:'100%'
+        <Box sx={{borderTop: '3px solid  white', color: 'white', backgroundColor: '', width:'100%'
       , marginTop:'30px', paddingY:'30px'
       }}>
           <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
