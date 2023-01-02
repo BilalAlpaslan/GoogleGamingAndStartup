@@ -99,38 +99,44 @@ function App() {
         {/* apply form section */} 
         <Box sx={{borderTop: '3px solid  white', backgroundColor: '', width:'100%', marginTop:'40px', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'
       }}>
-            <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '30px',margin:'30px', borderRadius: '20px', width: '' }}>
-              <AccordionSummary
-                expandIcon={<ExpandMore />}
-                aria-controls="panel1a-content"
-                id="panel1a-header" 
-                sx={{ alignItems: 'center' }}
-              >
-                <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+          <Typography style={{ fontSize: '40px', fontWeight: 'bold', color: 'white', padding: '20px' }}>
+            Summit ‘23
+          </Typography>
+          <Typography style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', paddingLeft: '20px' }}>
+            Sınırlı kontenjanla yapılacak etkinlik için biletlerinizi şimdiden alın.
+          </Typography>
+          <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '30px',margin:'30px', borderRadius: '20px', width: '' }}>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header" 
+              sx={{ alignItems: 'center' }}
+            >
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Apply
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+                {/* <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
                   Apply
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-                  {/* <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                    Apply
-                  </Typography> */}
-                  <form style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-                    <TextField id="outlined-basic" label="Name" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="Email" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="Phone Number" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="Company" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="Job Title" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="LinkedIn" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="Why do you want to attend?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <TextField id="outlined-basic" label="What do you hope to learn?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                    <Button variant="contained" style={{ backgroundColor: '#5700ff', color: 'white', fontSize: '20px', fontWeight: 'bold', width: 'fit-content', padding: '20px',marginTop:'15px', borderRadius: '20px' }}>
-                      Submit
-                    </Button>
-                  </form>
-                </div>
-              </AccordionDetails>
-            </Accordion>
+                </Typography> */}
+                <form style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+                  <TextField id="outlined-basic" label="Name" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="Email" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="Phone Number" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="Company" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="Job Title" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="LinkedIn" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="Why do you want to attend?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <TextField id="outlined-basic" label="What do you hope to learn?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
+                  <Button variant="contained" style={{ backgroundColor: '#5700ff', color: 'white', fontSize: '20px', fontWeight: 'bold', width: 'fit-content', padding: '20px',marginTop:'15px', borderRadius: '20px' }}>
+                    Submit
+                  </Button>
+                </form>
+              </div>
+            </AccordionDetails>
+          </Accordion>
         </Box>
 
         {/* partner and sponsorship section */}
@@ -167,44 +173,40 @@ function App() {
 
 
         {/* footer */}
-        <Box sx={{borderTop: '3px solid  white', color: 'white', backgroundColor: '', width:'100%'
-      , marginTop:'30px', paddingY:'30px'
+        <Box sx={{borderTop: '3px solid  white', color: 'white', marginTop:'30px', paddingY:'30px'
       }}>
-          <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', justifyContent: 'space-evenly', margin:'20px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                Lorem ipsum
+              <Typography style={{ fontSize: '30px', fontWeight: 'bold' }}>
+                Lorem
               </Typography>
-              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
-                Lorem ipsum
+              <Typography style={{ fontSize: '15px', fontWeight: 'bold' }}>
+                Lorem
               </Typography>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                Lorem ipsum
+              <Typography style={{ fontSize: '30px', fontWeight: 'bold' }}>
+                Lorem
               </Typography>
-              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
-                Lorem ipsum
-              </Typography>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                Lorem ipsum
-              </Typography>
-              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
-                Lorem ipsum
+              <Typography style={{ fontSize: '15px', fontWeight: 'bold' }}>
+                Lorem
               </Typography>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                Lorem ipsum
+              <Typography style={{ fontSize: '30px', fontWeight: 'bold' }}>
+                Lorem
               </Typography>
-              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
-                Lorem ipsum
+              <Typography style={{ fontSize: '15px', fontWeight: 'bold' }}>
+                Lorem
               </Typography>
             </div>
           </div>
         </Box>
+        <div style={{width:'100%', padding:'10px', display:'flex', justifyContent:'center', color:'white'}}>
+            <Typography>
+              ©  2023 Google Startup and Game Summit
+            </Typography>
+        </div>
     </>
   );
 }
