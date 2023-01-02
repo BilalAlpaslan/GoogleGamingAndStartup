@@ -165,6 +165,46 @@ function App() {
             </div>
         </Box>
 
+
+        {/* footer */}
+        <Box sx={{borderTop: '3px solid  white', color: 'white', backgroundColor: '', width:'100%'
+      , marginTop:'30px', paddingY:'30px'
+      }}>
+          <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
+              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+              <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                Lorem ipsum
+              </Typography>
+            </div>
+          </div>
+        </Box>
     </>
   );
 }
