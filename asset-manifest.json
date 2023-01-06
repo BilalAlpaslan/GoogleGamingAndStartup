@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/GoogleGamingAndStartup/static/js/main.ada42bb6.js",
+    "main.js": "/GoogleGamingAndStartup/static/js/main.3c95ea61.js",
     "index.html": "/GoogleGamingAndStartup/index.html",
-    "main.ada42bb6.js.map": "/GoogleGamingAndStartup/static/js/main.ada42bb6.js.map"
+    "main.3c95ea61.js.map": "/GoogleGamingAndStartup/static/js/main.3c95ea61.js.map"
   },
   "entrypoints": [
-    "static/js/main.ada42bb6.js"
+    "static/js/main.3c95ea61.js"
   ]
 }
