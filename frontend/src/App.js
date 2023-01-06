@@ -105,7 +105,7 @@ function App() {
           <Typography style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', paddingLeft: '20px' }}>
             Sınırlı kontenjanla yapılacak etkinlik için biletlerinizi şimdiden alın.
           </Typography>
-          <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '30px',margin:'30px', borderRadius: '20px', maxWidth: '280px' }}>
+          <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '20px',marginBottom:'30px',marginTop:'30px', borderRadius: '20px', weight:'100%'}}>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls="panel1a-content"
@@ -116,8 +116,11 @@ function App() {
                 Apply
               </Typography>
             </AccordionSummary>
-            <AccordionDetails>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyyggQdxWsuKZLZcUwZrS6tpB8VBGOVVy5WKmP6lODD7Y3YA/viewform?embedded=true" width="280" height="1980" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+            <AccordionDetails sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+              <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdyyggQdxWsuKZLZcUwZrS6tpB8VBGOVVy5WKmP6lODD7Y3YA/viewform?embedded=true"  
+              frameborder="0" marginheight="0" marginwidth="0" height="2000px" minWeight="580px"
+              >Yükleniyor…</iframe>
             </AccordionDetails>
           </Accordion>
         </Box>
