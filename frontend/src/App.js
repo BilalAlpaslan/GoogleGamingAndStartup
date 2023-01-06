@@ -105,7 +105,7 @@ function App() {
           <Typography style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', paddingLeft: '20px' }}>
             Sınırlı kontenjanla yapılacak etkinlik için biletlerinizi şimdiden alın.
           </Typography>
-          <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '30px',margin:'30px', borderRadius: '20px', width: '' }}>
+          <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '30px',margin:'30px', borderRadius: '20px', maxWidth: '280px' }}>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls="panel1a-content"
@@ -117,43 +117,24 @@ function App() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-                {/* <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                  Apply
-                </Typography> */}
-                <form style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
-                  <TextField id="outlined-basic" label="Name" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="Email" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="Phone Number" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="Company" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="Job Title" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="LinkedIn" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="Why do you want to attend?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <TextField id="outlined-basic" label="What do you hope to learn?" variant="outlined" style={{ width: '100%', margin: '10px' }} />
-                  <Button variant="contained" style={{ backgroundColor: '#5700ff', color: 'white', fontSize: '20px', fontWeight: 'bold', width: 'fit-content', padding: '20px',marginTop:'15px', borderRadius: '20px' }}>
-                    Submit
-                  </Button>
-                </form>
-              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyyggQdxWsuKZLZcUwZrS6tpB8VBGOVVy5WKmP6lODD7Y3YA/viewform?embedded=true" width="280" height="1980" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
             </AccordionDetails>
           </Accordion>
         </Box>
 
         {/* partner and sponsorship section */}
-        <Box sx={{borderTop: '3px solid  white', color: 'white', backgroundColor: '', width:'100%'
-      , marginTop:'30px', paddingY:'30px'
+        <Box sx={{borderTop: '3px solid  white', color: 'white', marginTop:'30px', paddingTop:'30px', paddingBottom:'30px'
       }}>
           <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
               <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
                 Partners
               </Typography>
               <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src={process.env.PUBLIC_URL + '/images/GDSC.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src={process.env.PUBLIC_URL + '/images/GDSC-white.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
@@ -161,19 +142,18 @@ function App() {
                 Sponsors
               </Typography>
               <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '100px', height: '100px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
               </div>
             </div>
         </Box>
 
 
         {/* footer */}
-        <Box sx={{borderTop: '3px solid  white', color: 'white', marginTop:'30px', paddingY:'30px'
+        <Box sx={{borderTop: '3px solid  white', color: 'white', marginTop:'30px', paddingTop:'30px', paddingBottom:'30px'
       }}>
           <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', justifyContent: 'space-evenly', margin:'20px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
@@ -202,7 +182,7 @@ function App() {
             </div>
           </div>
         </Box>
-        <div style={{width:'100%', padding:'10px', display:'flex', justifyContent:'center', color:'white'}}>
+        <div style={{padding:'10px', display:'flex', justifyContent:'center', color:'white'}}>
             <Typography>
               ©  2023 Google Startup and Game Summit
             </Typography>
