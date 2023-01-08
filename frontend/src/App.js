@@ -3,6 +3,7 @@ import { Accordion, AccordionDetails, AccordionSummary, Box, Button, TextField, 
 import React from "react";
 import Appbar from "./companents/Appbar";
 import SpeakerBox from "./companents/SpeakerBox";
+import RoomIcon from '@mui/icons-material/Room';
 
 
 function App() {
@@ -37,16 +38,16 @@ function App() {
               </Typography>
 
               <SpeakerBox
-                speaker="Speaker 1"
-                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                description="description"
+                speaker="Emre Savcı"
+                image={process.env.PUBLIC_URL + '/images/emre-savci.jpg'}
+                description="Startup Developer"
                 time="10:00 AM - 12:00 PM"
               />
               <SpeakerBox
-                speaker="Speaker 2"
-                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                description="description"
-                time="10:00 AM - 12:00 PM"
+                speaker="Kamil Koca"
+                image={process.env.PUBLIC_URL + '/images/kamilkoca.jpg'}
+                description="Evreka Satış ve iş geliştirme Müdürü"
+                time="12:00 AM - 2:00 PM"
               />
               <SpeakerBox
                 speaker="Speaker 3"
@@ -65,9 +66,9 @@ function App() {
               </Typography>
 
               <SpeakerBox
-                speaker="Speaker 3"
-                image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                description="description"
+                speaker="Volkan Bozkaya"
+                image={process.env.PUBLIC_URL + '/images/volkanbozkaya.jpg'}
+                description="Digigame General Manager"
                 time="10:00 AM - 12:00 PM"
               />
               <SpeakerBox
@@ -96,33 +97,50 @@ function App() {
             </div>
         </Box>
 
-        {/* apply form section */} 
-        <Box sx={{borderTop: '3px solid  white', backgroundColor: '', width:'100%', marginTop:'40px', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'
-      }}>
-          <Typography style={{ fontSize: '40px', fontWeight: 'bold', color: 'white', padding: '20px' }}>
-            Summit ‘23
-          </Typography>
-          <Typography style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', paddingLeft: '20px' }}>
-            Sınırlı kontenjanla yapılacak etkinlik için biletlerinizi şimdiden alın.
-          </Typography>
-          <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '20px',marginBottom:'30px',marginTop:'30px', borderRadius: '20px', weight:'100%'}}>
-            <AccordionSummary
-              expandIcon={<ExpandMore />}
-              aria-controls="panel1a-content"
-              id="panel1a-header" 
-              sx={{ alignItems: 'center' }}
-            >
-              <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
-                Apply
+        <Box sx={{borderTop: '3px solid  white', color:"white", padding: '30px', margin: "10px", justifyContent: 'space-around', 
+        display: 'flex', flexDirection: 'row', flexWrap: 'wrap', marginTop:'40px'}}>
+
+          {/* apply form section */}
+          <Box sx={{  display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'
+        }}>
+            <Typography style={{ fontSize: '40px', fontWeight: 'bold', color: 'white', padding: '20px' }}>
+              Summit ‘23
+            </Typography>
+            <Typography style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', paddingLeft: '20px' }}>
+              Sınırlı kontenjanla yapılacak etkinlik için biletlerinizi şimdiden alın.
+            </Typography>
+            <Accordion style={{ backgroundColor: 'white', color: 'black', fontSize: '20px', fontWeight: 'bold', padding: '20px',marginBottom:'30px',marginTop:'30px', borderRadius: '20px', weight:'100%'}}>
+              <AccordionSummary
+                expandIcon={<ExpandMore />}
+                aria-controls="panel1a-content"
+                id="panel1a-header" 
+                sx={{ alignItems: 'center' }}
+              >
+                <Typography style={{ fontSize: '40px', fontWeight: 'bold' }}>
+                  Apply
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdyyggQdxWsuKZLZcUwZrS6tpB8VBGOVVy5WKmP6lODD7Y3YA/viewform?embedded=true"  
+                frameborder="0" marginheight="0" marginwidth="0" height="2000px" minWeight="580px"
+                >Yükleniyor…</iframe>
+              </AccordionDetails>
+            </Accordion>
+          </Box>
+
+          {/* Road */}
+          <Box sx={{  display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
+            <img src={process.env.PUBLIC_URL + '/images/mphoto.png'} style={{maxWidth:'400px'}}/>
+            <Typography style={{ fontSize: '30px', fontWeight: 'bold', margin:"10px" }}>
+              Ümraniye, Elmalıkent, 34764 Ümraniye/İstanbul
               </Typography>
-            </AccordionSummary>
-            <AccordionDetails sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdyyggQdxWsuKZLZcUwZrS6tpB8VBGOVVy5WKmP6lODD7Y3YA/viewform?embedded=true"  
-              frameborder="0" marginheight="0" marginwidth="0" height="2000px" minWeight="580px"
-              >Yükleniyor…</iframe>
-            </AccordionDetails>
-          </Accordion>
+            <Button variant="contained">
+              <RoomIcon/>
+              Yol tarifi
+            </Button>
+          </Box>
+
         </Box>
 
         {/* partner and sponsorship section */}
@@ -135,9 +153,7 @@ function App() {
               <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
                 <img src={process.env.PUBLIC_URL + '/images/GDSC.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
                 <img src={process.env.PUBLIC_URL + '/images/GDSC-white.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src={process.env.PUBLIC_URL + '/images/umraniye.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center' }}>
@@ -145,11 +161,9 @@ function App() {
                 Sponsors
               </Typography>
               <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-evenly', width:'100%', margin:'20px' }}>
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src={process.env.PUBLIC_URL + '/images/GDSC.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src={process.env.PUBLIC_URL + '/images/GDSC-white.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
+                <img src={process.env.PUBLIC_URL + '/images/umraniye.png'} alt="partner" style={{ width: '170px', height: '170px', margin: '10px' }} />
               </div>
             </div>
         </Box>

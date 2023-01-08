@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material'
 export default function SpeakerBox({speaker, image, description, time}) {
     return (
         <Box sx={{ border: '2px solid  white', color: 'white', borderRadius: " 20px", width: '100%', padding: '10px', marginY: "10px", marginLeft: '' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: "9px" }}>
                 <Typography style={{ fontSize: '30px', fontWeight: 'bold' }}>
                     {speaker}
                 </Typography>
@@ -13,7 +13,7 @@ export default function SpeakerBox({speaker, image, description, time}) {
                     <img src={image} alt="google" style={{ width: '100%', height: '100%', borderRadius: "50%" }} />
                 </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', padding: "9px" }}>
                 <Typography style={{ fontSize: '20px', fontWeight: 'bold' }}>
                     {description}
                 </Typography>
