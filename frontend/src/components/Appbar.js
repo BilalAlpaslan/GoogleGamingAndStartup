@@ -1,15 +1,15 @@
 import * as React from 'react';
-import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 // import IconButton from '@mui/material/IconButton';
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 // import Badge from '@mui/material/Badge';
 // import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
-import { styled, alpha } from '@mui/material/styles';
+import {alpha, styled} from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import { Google } from '@mui/icons-material';
+import {Google} from '@mui/icons-material';
+import {AppBar} from "@mui/material";
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -53,12 +53,29 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
+const DashboardNavbarRoot = styled(AppBar)(({theme}) => ({
+    backgroundColor: "#000034",
+    color: "white",
+    boxShadow: theme.shadows[3]
+}));
+
 export default function Appbar() {
     return (
-        <MuiAppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, color: 'white', backgroundColor: '#000034' }}>
-            <Toolbar>
+        <DashboardNavbarRoot
+            sx={{
+                left: {
+                    lg: 0
+                },
+                width: {
+                    lg: 'calc(100%)'
+                }
+            }}>
+        <Toolbar
+            disableGutters
+            sx={{
+                minHeight: 64,}}>
                 {/* google icon */}
-                <Google sx={{ color: 'white', marginRight: '15px', fontSize: '30px' }} />
+                <Google sx={{ color: 'white', mr: 1, fontSize: '30px' }} />
                 <Typography
                     component="h1"
                     variant="h6"
@@ -78,7 +95,7 @@ export default function Appbar() {
                         // onChange={(e) => searchItem(e.target.value)}
                     />
                 </Search>
-            </Toolbar>
-        </MuiAppBar>
+        </Toolbar>
+        </DashboardNavbarRoot>
     )
 }
