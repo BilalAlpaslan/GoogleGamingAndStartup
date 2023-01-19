@@ -51,23 +51,30 @@ const MainPage = () => {
                 </Typography>
 
                 <SpeakerBox
-                    speaker="Emre Savcı"
-                    image={process.env.PUBLIC_URL + '/images/emre-savci.jpg'}
-                    description="Startup Developer"
+                    speaker="Volkan Bozkaya"
+                    image={process.env.PUBLIC_URL + '/images/volkanbozkaya.jpg'}
+                    description="Digigame General Manager"
                     time="10:00 AM - 12:00 PM"
                 />
                 <SpeakerBox
-                    speaker="Kamil Koca"
-                    image={process.env.PUBLIC_URL + '/images/kamilkoca.jpg'}
-                    description="Evreka Satış ve iş geliştirme Müdürü"
-                    time="12:00 AM - 2:00 PM"
-                />
-                <SpeakerBox
-                    speaker="Speaker 3"
+                    speaker="Özhan kamberli"
                     image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                    description="description"
+                    description="Head Of  Gaming | Matte - Studio"
                     time="10:00 AM - 12:00 PM"
                 />
+                <SpeakerBox
+                    speaker="Tolga Öztürk"
+                    image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                    description="CEO Funverse Games"
+                    time="10:00 AM - 12:00 PM"
+                />
+                <SpeakerBox
+                    speaker="Ahmet Çetinli"
+                    image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+                    description="HOGO Games Founder"
+                    time="10:00 AM - 12:00 PM"
+                />
+                
             </div>
         </Box>
 
@@ -89,21 +96,21 @@ const MainPage = () => {
                 </Typography>
 
                 <SpeakerBox
-                    speaker="Volkan Bozkaya"
-                    image={process.env.PUBLIC_URL + '/images/volkanbozkaya.jpg'}
-                    description="Digigame General Manager"
+                    speaker="Emre Savcı"
+                    image={process.env.PUBLIC_URL + '/images/emre-savci.jpg'}
+                    description="Startup Developer"
                     time="10:00 AM - 12:00 PM"
                 />
                 <SpeakerBox
-                    speaker="Speaker 3"
-                    image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                    description="description"
-                    time="10:00 AM - 12:00 PM"
+                    speaker="Kamil Koca"
+                    image={process.env.PUBLIC_URL + '/images/kamilkoca.jpg'}
+                    description="Evreka Satış ve iş geliştirme Müdürü"
+                    time="12:00 AM - 2:00 PM"
                 />
                 <SpeakerBox
-                    speaker="Speaker 3"
+                    speaker="Emrah Kalfa"
                     image="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
-                    description="description"
+                    description="Dev Team Lead @BoBu"
                     time="10:00 AM - 12:00 PM"
                 />
             </div>
